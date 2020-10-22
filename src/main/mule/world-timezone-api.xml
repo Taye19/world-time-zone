@@ -12,7 +12,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="world-timezone-apiFlow" doc:id="2bb62700-80aa-4109-be5e-3ba3a1ea440a" >
 		<http:listener doc:name="Listener" doc:id="36442555-a28d-4585-bb86-e831dffe31d2" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
-		<logger level="INFO" doc:name="Logger" doc:id="09b940ed-ea08-4e98-ace5-4f39a313cfa2" message="added something: #[payload]"/>
 		<http:request method="GET" doc:name="Request" doc:id="e5b51663-9050-4c24-aaa3-7d8beabfc3b4" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
