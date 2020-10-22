@@ -33,6 +33,7 @@
 				<cloudHubDeployment>
 				<username>marie19</username>
 				<enviroment>Sandbox</enviroment>
+				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>world-timezone-api</applicationName>
 				<password>12191219Btgm</password>
